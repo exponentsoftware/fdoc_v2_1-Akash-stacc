@@ -24,9 +24,9 @@ function longestIncreasingSubsequence(arr) {
 }
 
 const arr = [1, 4, 2, 5, 3];
-console.log(longestIncreasingSubsequence(arr)); // Output: 4
+console.log(longestIncreasingSubsequence(arr)); // Output: 3
 
-//in the given array arr. We create an array dp of the same length as arr and initialize all its values to 1. The dp array will store the length of the longest increasing subsequence ending at each index of arr.
+//in the given array arr. create an array dp of the same length as arr and initialize all its values to 1. The dp array will store the length of the longest increasing subsequence ending at each index of arr.
 //then iterate over the array arr and for each index i, we check all the previous indices j (from 0 to i-1). If arr[i] is greater than arr[j] and the length of the subsequence ending at index j plus 1 is greater than the current length at index i, we update dp[i] with the new length.
 //After the above loop, we find the maximum value in the dp array, which represents the length of the longest increasing subsequence in the array.
 
